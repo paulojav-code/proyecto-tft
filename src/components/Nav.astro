@@ -1,0 +1,30 @@
+---
+interface Props {
+	href: string;
+    text: string;
+}
+
+const { href,text } = Astro.props;
+---
+<div>
+    <a href={href}>{text}</a>
+</div>
+<style>
+    div{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    a{
+        color: #88a0a7;
+        text-decoration: none;
+		font-size: 1em;
+		font-weight: 900;
+		line-height: 1;
+    }
+    a:hover{
+        color: #f8f9fa;
+        font-size: 1.1em;
+        transition: .5s;
+    }
+</style>

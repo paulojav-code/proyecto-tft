@@ -1,0 +1,38 @@
+{
+    "doma_dragon":{
+        "Janna":{
+            "nombre": "Janna",
+            "habilidades":[
+                {
+                    "Heavenly Winds":{
+                        "description":"Grant Shield to Janna and the lowest Health ally for 4 seconds. Then, deal magic damage to the 2 nearest enemies",
+                        "increase":"AP Shield: 150% / 200% / 250%. AP Damage: 140% / 210% / 315%"
+                    } 
+                },
+                {
+                    "Dragonlord":{
+                        "description":"After 8 seconds of combat, the Dragon strikes the board, dealing true damage to enemies and granting all allies Attack Speed for the rest of combat.",
+                        "increase":"2 5% Health damage, 12% Attack Speed. 3 10% Health damage, 18% Attack Speed. 4 12% Health damage, and Stuns for 1.5 seconds. 5 18% Health damage, 45% Attack Speed."
+                    }
+                },
+                {
+                    "Invoker":{
+                        "description":"Every 3 seconds, your units gain Mana.",
+                        "increase":"2 5 Mana to all allies. 4 20 Mana to Invokers; 5 Mana to others. 6 35 Mana to Invokers. 20 Mana to others"
+                    }
+                }
+            ],
+            "stats":{
+                "coste":2,
+                "vida":"600 / 1080 / 1944",
+                "mana":" 25 / 75",
+                "armadura":20,
+                "mr":20,
+                "poder_de_habilidad":"100",
+                "dps":" 28 / 50 / 91",
+                "daño":"40 / 72 / 130",
+                "rango": 4
+            }
+        }
+    }
+}

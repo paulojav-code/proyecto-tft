@@ -1,11 +1,75 @@
 ---
-console.log('javascript')
----
-<style>
-    header{
+import  Nav from "./Nav.astro"
 
-    }
-</style>
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
 <header>
+    
+    <h1><div class="title">{title}</div><a href="http://localhost:4321/" class="box"><img src="https://rerollcdn.com/brand.svg"></a></h1>
+    
+    <nav>
+        <Nav
+                href='http://localhost:4321/campeones'
+                text='Campeones'
+            />
+            <Nav
+                href='#'
+                text='Classes'
+            />
+            <Nav
+                href='#'
+                text='Items'
+            />
+            <Nav
+                href='#'
+                text='Compos'
+            />
+            <Nav
+                href='#'
+                text='Origins'
+            />
+    </nav>
     <slot/>
 </header>
+<style>
+    header{
+        margin: auto;
+		padding: 1em;
+		width: 100%;
+		max-width: calc(100% - 2rem);
+		font-size: 20px;
+		line-height: 1.6;
+    }
+    h1 {
+		color: white;
+		font-size: 3em;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+	}
+    nav{
+        background-color: #002b33;
+		padding: .5em;
+		width: 100%;
+		max-width: calc(100% - 2rem);
+        display: inline-block;
+        display: flex;
+        justify-content:space-around;
+        border-radius: 2em;
+    }
+    .title{
+        width: 60%;
+    }
+    .box{
+        width:3em;
+    }
+    
+</style>

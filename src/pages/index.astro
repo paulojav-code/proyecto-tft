@@ -1,35 +1,29 @@
 ---
 import Layout from '../layouts/Layout.astro';                                                                       
 import Header from '../components/Header.astro';
+import Nav from '../components/Nav.astro';
 ---
 
 <Layout title="Welcome to TFT.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">TFT GUIDE </span></h1>
-		<Header>
-			<p>Set 11 tft</p>
+		<Header title='Welcome to TFT Guide'>
 		</Header> 
-		<p>Hola a todos</p>
-	</main>
+		<div class="box">
+			<h1>Como Jugar</h1>
+			<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Fr34ueBby4E?si=_AZbgeE_TxjdQJoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1em;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-
 	h1 {
+		color: white;
 		font-size: 3em;
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
 	}
-
+	.video{
+		width: 50%;
+		height: 50vh;
+	}
 </style>
