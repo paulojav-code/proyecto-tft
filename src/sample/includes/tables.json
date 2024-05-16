@@ -1,0 +1,380 @@
+{
+    "sites":{
+        "name":"sites",
+        "id":"id_sites",
+        "columns":{
+            "id_sities":{
+                "name":"id_sites",
+                "var":"i",
+                "default":true
+            },
+            "name":{
+                "name":"id_sites",
+                "var":"s"
+            },
+            "main_site":{
+                "name":"id_sites",
+                "var":"i",
+                "default":true
+            },
+            "active":{
+                "name":"id_sites",
+                "var":"i",
+                "default":true
+            }
+        }
+    },
+    "pages": {
+        "name": "pages",
+        "id": "id_pages",
+        "columns": {
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i",
+                "default": true
+            },
+            "id_sites": {
+                "name": "id_sites",
+                "var": "i"
+            },
+            "id_type_languaje": {
+                "name": "id_typw_languaje",
+                "var": "i"
+            },
+            "name": {
+                "name": "name",
+                "var": "s"
+            },
+            "domain": {
+                "name": "domain",
+                "var": "s"
+            },
+            "folder":{
+                "name":"folder",
+                "var":"s"
+            },
+            "tagmanager":{
+                "name":"tagmanager",
+                "var":"s"
+            },
+            "language":{
+                "name":"language",
+                "var":"i",
+                "default":true
+            },
+            "url_book": {
+                "name": "url_book",
+                "var": "s"
+            },
+            "url_wa": {
+                "name": "url_wa",
+                "var": "s"
+            },
+            "url_msg":{
+                "name":"url_msg",
+                "var":"s"
+            },
+            "mail": {
+                "name": "mail",
+                "var": "s"
+            },
+            "phone_number": {
+                "name": "phone_number",
+                "var": "s"
+            },
+            "id_tokens":{
+                "name":"id_token",
+                "var":"i"
+            },
+            "id_blog": {
+                "name": "id_hotel_blog",
+                "var": "i"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "users_pages":{
+        "name":"users_pages",
+        "id":"id_users_pages",
+        "columns":{
+            "id_users_pages":{
+                "name":"id_users_pages",
+                "var":"i",
+                "default":true
+            },
+            "id_users":{
+                "name":"id_users",
+                "var":"i"
+            },
+            "id_pages":{
+                "name":"id_pages",
+                "var":"i"
+            },
+            "active":{
+                "name":"active",
+                "var":"i",
+                "default":true
+            }
+        }
+    },
+    "homes":{
+        "name":"homes",
+        "id":"id_homes",
+        "columns":{
+            "id_homes":{
+                "name":"id_homes",
+                "var":"i",
+                "default":true
+            },
+            "id_pages":{
+                "name":"id_pages",
+                "var":"i"
+            },
+            "favicon": {
+                "name": "favicon",
+                "var": "i"
+            },
+            "logo":{
+                "name":"logo",
+                "var":"i"
+            },
+            "cover":{
+                "name":"cover",
+                "var":"i"
+            },
+            "phrase":{
+                "name":"phrase",
+                "var":"s"
+            },
+            "title":{
+                "name":"title",
+                "var":"s"
+            },
+            "concept":{
+                "name":"concept",
+                "var":"s"
+            },
+            "description":{
+                "name":"description",
+                "var":"s"
+            },
+            "privacy":{
+                "name":"privacy",
+                "var":"s"
+            },
+            "active":{
+                "name":"active",
+                "var":"i",
+                "default":true
+            }
+        }
+    },
+    "files":{
+        "name":"files",
+        "id":"id_files",
+        "columns":{
+            "id_files":{
+                "name":"id_files",
+                "var":"i",
+                "default":true
+            },
+            "id_pages":{
+                "name":"id_pages",
+                "var":"i"
+            },
+            "name":{
+                "name":"name",
+                "var":"s"
+            },
+            "url_file":{
+                "name":"url_file",
+                "var":"s"
+            },
+            "active":{
+                "name":"active",
+                "var":"i",
+                "default":true
+            }
+        }
+    },
+    "colors":{
+        "name":"colors",
+        "id":"id_colors",
+        "columns":{
+            "id_color":{
+                "name":"id_color",
+                "var":"i",
+                "default":true
+            },
+            "id_pages":{
+                "name":"id_pages",
+                "var":"i"
+            },
+            "url_info":{
+                "name":"irl_info",
+                "var":"s"
+            },
+            "active":{
+                "name":"active",
+                "var":"i",
+                "default":true
+            }
+        }
+    },
+    "histories":{
+        "name":"histories",
+        "id":"id_histories",
+        "columns":{
+            "id_histories":{
+                "name":"histories",
+                "var":"i",
+                "default":true
+            },
+            "id_pages":{
+                "name":"id_pages",
+                "var":"i"
+            },
+            "url_info":{
+                "name":"url_info",
+                "var":"s"
+            },
+            "active":{
+                "name":"active",
+                "var":"i",
+                "default":true
+            }
+        }
+    },
+    "locations":{
+        "name":"locations",
+        "id":"id_locations",
+        "columns":{
+            "id_locations":{
+                "name":"id_locations",
+                "var":"i",
+                "default":true
+            },
+            "id_pages":{
+                "name":"id_pages",
+                "var":"i"
+            },
+            "description":{
+                "name":"description",
+                "var":"s"
+            },
+            "url_location":{
+                "name":"url_location",
+                "var":"s"
+            },
+            "url_map":{
+                "name":"url_map",
+                "var":"s"
+            },
+            "active":{
+                "name":"",
+                "var":"i",
+                "default":true
+            }
+        }
+    },
+    "whats_around":{
+        "name":"whats_around",
+        "id":"id_whats_around",
+        "columns":{
+            "id_whats_around":{
+                "name":"id_whats_around",
+                "var":"i",
+                "default":true
+            },
+            "id_pages":{
+                "name":"id_pages",
+                "var":"i"
+            },
+            "url_info":{
+                "name":"url_info",
+                "var":"s"
+            },
+            "active":{
+                "name":"active",
+                "var":"i",
+                "default":true
+            }
+        }
+    },
+    "amenities":{
+        "name":"amenities",
+        "id":"id_amenities",
+        "columns":{
+            "id_amenities":{
+                "name":"id_amenities",
+                "var":"i",
+                "default":true
+            },
+            "id_pages":{
+                "name":"id_pages",
+                "var":"i"
+            },
+            "name":{
+                "name":"name",
+                "var":"s"
+            },
+            "subtitle":{
+                "name":"subtitle",
+                "var":"s"
+            },
+            "logo":{
+                "name":"logo",
+                "var":"i"
+            },
+            "description":{
+                "name":"description",
+                "var":"s"
+            },
+            "url_info":{
+                "name":"url_info",
+                "var":"s"
+            },
+            "url_book":{
+                "name":"url_book",
+                "var":"s"
+            },
+            "order":{
+                "name":"order",
+                "var":"i"
+            },
+            "active":{
+                "name":"active",
+                "var":"i",
+                "default":true
+            }
+        }
+    },
+    "amenities_img":{
+        "name":"amenities_img",
+        "id":"id_amenities_img",
+        "columns":{
+            "id_amenities_img":{
+                "name":"id_amenities_img",
+                "var":"i",
+                "default":true
+            },
+            "id_amenities":{
+                "name":"id_amenities",
+                "var":"i"
+            },
+            "id_files":{
+                "name":"id_files",
+                "var":"i"
+            },
+            "active":{
+                "name":"active",
+                "var":"i",
+                "default":true
+            }
+        }
+    }
+}

@@ -1,29 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';                                                                       
 import Header from '../components/Header.astro';
-import Nav from '../components/Nav.astro';
+import Sec from '../components/sec.astro';
+let t = "no cuenta con el respaldo de Riot Games y no refleja los puntos de vista ni las opiniones de Riot Games ni de nadie oficialmente involucrado en la producción o gestión de League of Legends. League of Legends y Riot Games son marcas comerciales o marcas comerciales registradas de Riot Games, Inc. League of Legends © Riot Games, Inc."
 ---
+
 
 <Layout title="Welcome to TFT.">
 		<Header title='Welcome to TFT Guide'>
 		</Header> 
-		<div class="box">
-			<h1>Como Jugar</h1>
-			<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Fr34ueBby4E?si=_AZbgeE_TxjdQJoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-		</div>
+		<Sec
+			type='left'
+			titulo='Jugabilidad'
+			media='<iframe width="100%" height="100%" src="https://www.youtube.com/embed/QfSUE4IZAnY?si=vM64o7KD6ndG5b3u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+			text=`Teamfight Tactics es un juego de autobatallas: un juego PvP por rondas en el que reclutarás a un equipo que peleará por ti de forma automática. Si nunca has jugado un juego de autobatallas, ¡no te preocupes! TFT utiliza muchos de los conceptos que conoces y adoras de otros juegos de estrategia, como reclutar unidades de una alineación compartida de recursos, formar equipos, manejar tu economía y posicionar unidades. <br><br>Así es como funciona: los jugadores se enfrentan en combates 1 contra 1 hasta que solo queda un jugador. Para ganar, tienes que reclutar al mejor equipo de campeones de una alineación compartida, equiparlos con poderosos objetos, administrar tus ingresos de oro para hacer frente a la competencia y posicionar a tu equipo en formaciones de batalla ganadoras. Hay un número ilimitado de estrategias ganadoras, por lo que tendrás que adaptarte a diferentes situaciones en cada partida para conseguir la victoria.` 
+		/>
+		<Sec
+		
+		titulo='Sets'
+		media='<img class="img" src="https://empantallados.com/main-files/uploads/2019/10/2019.10.08-Teamfight-Tactics-Imagen-Destacada.jpg">'
+		text=`Cada partida de TFT ocurre en la Convergencia y se centra en una temática y una historia específicos, denominados sets. A intervalos de varios meses, TFT te introduce en un nuevo universo con nuevos campeones, rasgos y personajes. En cuanto a la jugabilidad, los nuevos sets también vienen con una nueva tabla clasificatoria por escalar, nuevas composiciones de equipo y nuevas posibilidades de objetos.` 
+		/>
 </Layout>
-
 <style>
-	h1 {
-		color: white;
-		font-size: 3em;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.video{
-		width: 50%;
-		height: 50vh;
-	}
+	
+	
 </style>

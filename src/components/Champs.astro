@@ -1,0 +1,47 @@
+---
+interface Props {
+    name:string;
+	champ_img: string;
+}
+
+const { name,champ_img } = Astro.props;
+
+let img_url = `https://raw.communitydragon.org/latest/game/${champ_img.substring(0,champ_img.length - 3)+"png"}`.toLowerCase();
+---
+
+<button class="box_champs">
+    <img src={img_url} alt="">
+    <h2>{name}</h2>
+</button>
+
+<style>
+    button{
+        margin: 0.5em;
+        border: 1px solid #002b33 ;
+        background-color: transparent;
+        text-decoration: none;
+        width:10em;
+        & h2{
+            color: #fff;
+            text-align: center;
+        }
+        & img{
+            width:100%;
+            margin-bottom: 0.5em;
+        }
+        padding:0.25em;
+    }
+    button:hover{
+        border: 1px solid #fd7e14;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    document.querySelectorAll('.box_champs')!.forEach(e=>{
+        e.addEventListener('click',function () {
+            alert(e.querySelector('h2')!.innerHTML)
+        })
+    });
+</script>

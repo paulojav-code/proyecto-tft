@@ -1,0 +1,719 @@
+{
+    "sites": {
+        "name": "sites",
+        "id": "id_sites",
+        "columns": {
+            "id_sites": {
+                "name": "id_sites",
+                "var": "i",
+                "default": true
+            },
+            "name": {
+                "name": "name",
+                "var": "s"
+            },
+            "main_site": {
+                "name": "main_site",
+                "var": "i",
+                "default": true
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "pages": {
+        "name": "pages",
+        "id": "id_pages",
+        "columns": {
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i",
+                "default": true
+            },
+            "id_sites": {
+                "name": "id_sites",
+                "var": "i"
+            },
+            "name": {
+                "name": "name",
+                "var": "s"
+            },
+            "domain": {
+                "name": "domain",
+                "var": "s"
+            },
+            "url_book": {
+                "name": "url_book",
+                "var": "s"
+            },
+            "url_wa": {
+                "name": "url_wa",
+                "var": "s"
+            },
+            "mail": {
+                "name": "mail",
+                "var": "s"
+            },
+            "phone_number": {
+                "name": "phone_number",
+                "var": "s"
+            },
+            "sms_number": {
+                "name": "sms_number",
+                "var": "s"
+            },
+            "id_hotel_blog": {
+                "name": "id_hotel_blog",
+                "var": "i"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "amenities": {
+        "name": "amenities",
+        "id": "id_amenities",
+        "columns": {
+            "id_amenities": {
+                "name": "id_amenities",
+                "var": "i",
+                "default": true
+            },
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i"
+            },
+            "name": {
+                "name": "name",
+                "var": "s"
+            },
+            "title": {
+                "name": "title",
+                "var": "s"
+            },
+            "description": {
+                "name": "description",
+                "var": "s"
+            },
+            "url_info": {
+                "name": "url_info",
+                "var": "s"
+            },
+            "logo": {
+                "name": "logo",
+                "var": "s"
+            },
+            "url_reservations": {
+                "name": "url_reservations",
+                "var": "s"
+            },
+            "order": {
+                "name": "order",
+                "var": "i"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "amenities_img": {
+        "name": "amenities_img",
+        "id": "id_amenities_img",
+        "columns": {
+            "id_amenities_img": {
+                "name": "id_amenities_img",
+                "var": "i",
+                "default": true
+            },
+            "id_files": {
+                "name": "id_files",
+                "var": "i"
+            },
+            "id_amenities": {
+                "name": "id_amenities",
+                "var": "i"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "color": {
+        "name": "color",
+        "id": "id_color",
+        "columns": {
+            "id_color": {
+                "name": "id_color",
+                "var": "i",
+                "default": true
+            },
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i"
+            },
+            "name": {
+                "name": "name",
+                "var": "s"
+            },
+            "hex": {
+                "name": "hex",
+                "var": "s"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "history": {
+        "name": "history",
+        "id": "id_history",
+        "columns": {
+            "id_history": {
+                "name": "id_history",
+                "var": "i",
+                "default": true
+            },
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i"
+            },
+            "url_pdf": {
+                "name": "url_pdf",
+                "var": "s"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "homes": {
+        "name": "homes",
+        "id": "id_homes",
+        "columns": {
+            "id_home": {
+                "name": "id_homes",
+                "var": "i",
+                "default": true
+            },
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i"
+            },
+            "favicon": {
+                "name": "favicon",
+                "var": "i"
+            },
+            "logo": {
+                "name": "logo",
+                "var": "i"
+            },
+            "cover": {
+                "name": "cover",
+                "var": "i"
+            },
+            "phrase": {
+                "name": "phrase",
+                "var": "s"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "files": {
+        "name": "files",
+        "id": "id_files",
+        "columns": {
+            "id_files": {
+                "name": "id_files",
+                "var": "i",
+                "default": true
+            },
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i"
+            },
+            "name": {
+                "name": "name",
+                "var": "s"
+            },
+            "url_file": {
+                "name": "url_file",
+                "var": "s"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "location": {
+        "name": "location",
+        "id": "id_location",
+        "columns": {
+            "id_location": {
+                "name": "id_location",
+                "var": "i",
+                "default": true
+            },
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "meetings": {
+        "name": "meetings",
+        "id": "id_meetings",
+        "columns": {
+            "id_meetings": {
+                "name": "id_meetings",
+                "var": "i",
+                "default": true
+            },
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i"
+            },
+            "description": {
+                "name": "description",
+                "var": "s"
+            },
+            "url_layouts": {
+                "name": "url_layouts",
+                "var": "s"
+            },
+            "url_packages": {
+                "name": "url_packages",
+                "var": "s"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "meetings_img": {
+        "name": "meetings_img",
+        "id": "id_meetings_img",
+        "columns": {
+            "id_meetings_img": {
+                "name": "id_meetings_img",
+                "var": "i",
+                "default": true
+            },
+            "id_files": {
+                "name": "id_files",
+                "var": "i"
+            },
+            "id_meetings": {
+                "name": "id_meetings",
+                "var": "i"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "promos": {
+        "name": "promos",
+        "id": "id_promos",
+        "columns": {
+            "id_promos": {
+                "name": "id_promos",
+                "var": "i",
+                "default": true
+            },
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i"
+            },
+            "id_type_promos": {
+                "name": "id_type_promos",
+                "var": "i"
+            },
+            "title": {
+                "name": "title",
+                "var": "s"
+            },
+            "description": {
+                "name": "description",
+                "var": "s"
+            },
+            "url_more": {
+                "name": "url_more",
+                "var": "s"
+            },
+            "order": {
+                "name": "order",
+                "var": "i"
+            },
+            "date_start": {
+                "name": "date_start",
+                "var": "s"
+            },
+            "date_end": {
+                "name": "date_end",
+                "var": "s"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "promos_img": {
+        "name": "promos_img",
+        "id": "id_promos_img",
+        "columns": {
+            "id_promos_img": {
+                "name": "id_promos_img",
+                "var": "i",
+                "default": true
+            },
+            "id_files": {
+                "name": "id_files",
+                "var": "i"
+            },
+            "id_promos": {
+                "name": "id_promos",
+                "var": "i"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "promos_info": {
+        "name": "promos_info",
+        "id": "id_promos_info",
+        "columns": {
+            "id_promos_info": {
+                "name": "id_promos_info",
+                "var": "i",
+                "default": true
+            },
+            "id_promos": {
+                "name": "id_promos",
+                "var": "i"
+            },
+            "url_tel": {
+                "name": "url_tel",
+                "var": "i"
+            },
+            "url_online_link": {
+                "name": "url_online_link",
+                "var": "i"
+            },
+            "url_sms": {
+                "name": "url_sms",
+                "var": "i"
+            },
+            "url_wa": {
+                "name": "url_wa",
+                "var": "i"
+            },
+            "mail": {
+                "name": "mail",
+                "var": "i"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "restobars": {
+        "name": "restobars",
+        "id": "id_restobars",
+        "columns": {
+            "id_restobars": {
+                "name": "id_restobars",
+                "var": "i",
+                "default": true
+            },
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i"
+            },
+            "logo": {
+                "name": "logo",
+                "var": "s"
+            },
+            "concept": {
+                "name": "concept",
+                "var": "s"
+            },
+            "name": {
+                "name": "name",
+                "var": "s"
+            },
+            "description": {
+                "name": "description",
+                "var": "s"
+            },
+            "url_menu": {
+                "name": "url_menu",
+                "var": "s"
+            },
+            "url_reservations": {
+                "name": "url_reservations",
+                "var": "s"
+            },
+            "times": {
+                "name": "times",
+                "var": "s"
+            },
+            "order": {
+                "name": "order",
+                "var": "i"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "restobars_img": {
+        "name": "restobars_img",
+        "id": "id_restobars_img",
+        "columns": {
+            "id_restobars_img": {
+                "name": "id_restobars_img",
+                "var": "i",
+                "default": true
+            },
+            "id_files": {
+                "name": "id_files",
+                "var": "i"
+            },
+            "id_restobars": {
+                "name": "id_restobars",
+                "var": "i"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "rooms": {
+        "name": "rooms",
+        "id": "id_rooms",
+        "columns": {
+            "id_rooms": {
+                "name": "id_rooms",
+                "var": "i",
+                "default": true
+            },
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i"
+            },
+            "type": {
+                "name": "type",
+                "var": "s"
+            },
+            "name": {
+                "name": "name",
+                "var": "s"
+            },
+            "description": {
+                "name": "description",
+                "var": "s"
+            },
+            "url_reservations": {
+                "name": "url_reservations",
+                "var": "s"
+            },
+            "order": {
+                "name": "order",
+                "var": "i"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "rooms_img": {
+        "name": "rooms_img",
+        "id": "id_rooms_img",
+        "columns": {
+            "id_rooms_img": {
+                "name": "id_rooms_img",
+                "var": "i",
+                "default": true
+            },
+            "id_files": {
+                "name": "id_files",
+                "var": "i"
+            },
+            "id_rooms": {
+                "name": "id_rooms",
+                "var": "i"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "type_media": {
+        "name": "type_media",
+        "id": "id_type_media",
+        "columns": {
+            "id_type_media": {
+                "name": "id_type_media",
+                "var": "i",
+                "default": true
+            },
+            "name": {
+                "name": "name",
+                "var": "s"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "type_promos": {
+        "name": "type_promos",
+        "id": "id_type_promos",
+        "columns": {
+            "id_type_promos": {
+                "name": "id_type_promos",
+                "var": "i",
+                "default": true
+            },
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i"
+            },
+            "name": {
+                "name": "name",
+                "var": "s"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "weddings": {
+        "name": "weddings",
+        "id": "id_weddings",
+        "columns": {
+            "id_weddings": {
+                "name": "id_weddings",
+                "var": "i",
+                "default": true
+            },
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i"
+            },
+            "description": {
+                "name": "description",
+                "var": "s"
+            },
+            "url_weddings": {
+                "name": "url_weddings",
+                "var": "s"
+            },
+            "url_packages": {
+                "name": "url_packages",
+                "var": "s"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "weddings_img": {
+        "name": "weddings_img",
+        "id": "id_weddings_img",
+        "columns": {
+            "id_weddings_img": {
+                "name": "id_weddings_img",
+                "var": "i",
+                "default": true
+            },
+            "id_files": {
+                "name": "id_files",
+                "var": "i"
+            },
+            "id_weddings": {
+                "name": "id_weddings",
+                "var": "i"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    },
+    "whats_around": {
+        "name": "whats_around",
+        "id": "id_whats_around",
+        "columns": {
+            "id_whats_around": {
+                "name": "id_whats_around",
+                "var": "i",
+                "default": true
+            },
+            "id_pages": {
+                "name": "id_pages",
+                "var": "i"
+            },
+            "url_pdf": {
+                "name": "url_pdf",
+                "var": "s"
+            },
+            "active": {
+                "name": "active",
+                "var": "i",
+                "default": true
+            }
+        }
+    }
+}

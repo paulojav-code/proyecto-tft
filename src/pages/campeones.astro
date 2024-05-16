@@ -1,8 +1,32 @@
 ---
 import  Layout  from "../layouts/Layout.astro";
 import  Header  from "../components/Header.astro";
+import  Champs from "../components/Champs.astro";
+import  ChampData from "../components/ChampData.astro";
+
+const res = await fetch('http://localhost/web/prueba_tft/champions.json')
+const data = await res.json();
+console.log(data)
 ---
 <Layout title="Campeones">
     <Header title="Campeones">
     </Header>
+    <div class="menu_campeones">
+        {
+            data.map((d: any)=> (
+                <Champs  name={d.name} champ_img={d.squareIcon}/>
+            ))
+        }
+    </div>
+    <ChampData data={data}
+    /> 
 </Layout>
+
+
+<style>
+    .menu_campeones {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+</style>
